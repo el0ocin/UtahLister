@@ -1,0 +1,43 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+*.tmp
+*.bak
+*.log
+*.pyc
+__pycache__/
+
+# Local secrets and environment files
+.env
+.env.*
+*.local
+
+# Public-safe repo boundary: private code and runtime stay out of Git
+/apps/
+/site/
+/output/
+/misc items for resale/
+/Marketplace Listing Ops/
+/Manus Project_Utahlister/
+/Outreach Build/
+/Proof of Sale_FBMP/
+/Proof of Sale_KSL/
+
+# Raw audit artifacts stay private; only sanitized summaries belong in docs
+/production_readiness_audit.md
+/security_best_practices_report.md
+
+# Brand implementation assets stay private; keep only the brand guide
+/brand/*
+!/brand/README.md
+
+# Internal-only docs that should not be part of the public-safe business repo
+/docs/02-notion-setup.md
+/docs/04-master-prompt.md
+/docs/09-security-sop.md
+/docs/20-google-drive-archive-checklist.md
+/docs/21-workspace-drive-structure.md
+/docs/24-notion-agent-setup.md
