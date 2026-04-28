@@ -24,7 +24,8 @@ This repository is the public-safe master source for understanding the business.
 3. [docs/34-business-roadmap-and-next-90-days.md](docs/34-business-roadmap-and-next-90-days.md)
 4. [docs/25-founder-start-here.md](docs/25-founder-start-here.md)
 5. [docs/40-founder-proof-and-review-summary.md](docs/40-founder-proof-and-review-summary.md)
-6. [docs/35-public-repo-boundary.md](docs/35-public-repo-boundary.md)
+6. [docs/41-content-engine-and-local-seo-plan.md](docs/41-content-engine-and-local-seo-plan.md)
+7. [docs/35-public-repo-boundary.md](docs/35-public-repo-boundary.md)
 
 ## What This Repo Contains
 
@@ -32,6 +33,7 @@ This repository is the public-safe master source for understanding the business.
 - offer, pricing, positioning, and service-path design
 - delivery workflow and operating model
 - public-safe website, trust, and outreach plans
+- blog, SEO, and local content-engine strategy
 - research summaries and source register
 - sanitized templates for intake, delivery, and operating systems
 - brand guidance
@@ -65,6 +67,7 @@ UtahLister is in proof, trust, and repeatability mode as a service business.
 
 - The dual-offer model is now defined: `New Listing Build` and `Listing Rescue`.
 - Rescue-specific research, pricing, outreach constraints, and intake rules are now documented.
+- A public-safe content-engine and local-SEO plan is now documented from the April 28, 2026 blog research set.
 - Founder proof and marketplace seller reviews exist, but broad public launch still depends on more repeatable customer outcomes and a verified live intake flow.
 - Private operator tooling exists, but it remains outside this public repo.
 
@@ -73,5 +76,7 @@ UtahLister is in proof, trust, and repeatability mode as a service business.
 - [docs/38-listing-rescue-service-model.md](docs/38-listing-rescue-service-model.md)
 - [docs/39-unified-service-model.md](docs/39-unified-service-model.md)
 - [docs/40-founder-proof-and-review-summary.md](docs/40-founder-proof-and-review-summary.md)
+- [docs/41-content-engine-and-local-seo-plan.md](docs/41-content-engine-and-local-seo-plan.md)
+- [docs/42-canonical-workspace-and-information-architecture.md](docs/42-canonical-workspace-and-information-architecture.md)
 - [docs/36-private-build-and-systems-summary.md](docs/36-private-build-and-systems-summary.md)
 - [docs/37-launch-readiness-summary.md](docs/37-launch-readiness-summary.md)

@@ -35,6 +35,12 @@ The highest-signal public-safe research currently includes:
   - rescue intake design
   - stale-listing failure analysis
   - rescue pricing
+- the April 28, 2026 content and growth decision pack covering:
+  - local SEO direction
+  - blog and editorial strategy
+  - category hubs
+  - CTA and service-path mapping
+  - content-engine implications for the roadmap
 
 ## What should stay out of the public repo
 

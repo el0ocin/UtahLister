@@ -16,6 +16,8 @@ This register maps the canonical UtahLister docs to their supporting source mate
 | [38-listing-rescue-service-model.md](38-listing-rescue-service-model.md) | `01-offer-and-pricing.md`, `03-service-workflow.md`, `30-lead-generation-and-outreach-system.md` | `2026-04-18__UtahLister__Research__Listing-Rescue-Decision-Pack__v1.md` | April 2026 rescue research set |
 | [39-unified-service-model.md](39-unified-service-model.md) | `01-offer-and-pricing.md`, `38-listing-rescue-service-model.md`, `19-marketplace-posting-operating-model.md` | `Website+Trust+Marketing`, April 2026 rescue research set | Canonical dual-offer definition |
 | [40-founder-proof-and-review-summary.md](40-founder-proof-and-review-summary.md) | `11-case-study-trek-marlin-5.md` | sanitized founder proof notes, sold-item summaries, seller-review summaries | Raw screenshots and profile-image source files remain private |
+| [41-content-engine-and-local-seo-plan.md](41-content-engine-and-local-seo-plan.md) | `30-lead-generation-and-outreach-system.md`, `31-website-and-advertising-plan.md`, `17-homepage-research-brief.md` | `2026-04-28__UtahLister__Research__Content-SEO-Growth-Decision-Pack__v1.md` | April 2026 blog research, strategic briefing, and editorial guide set |
+| [42-canonical-workspace-and-information-architecture.md](42-canonical-workspace-and-information-architecture.md) | `00-repo-system.md`, `35-public-repo-boundary.md` | internal cross-system audit notes, Drive and flash-drive reconciliation | Local workspace, flash drive, and Google Drive role definition |
 
 ## Research Archive Files
 
@@ -28,6 +30,7 @@ The local `Research/` folder is the main durable archive for the current deep re
 - `2026-04-08__UtahLister__Research__Official-SOPs__v1.md`
 - `2026-04-08__UtahLister__Research__Legal+Systems+Automation+Defensibility__v1.md`
 - `2026-04-18__UtahLister__Research__Listing-Rescue-Decision-Pack__v1.md`
+- `2026-04-28__UtahLister__Research__Content-SEO-Growth-Decision-Pack__v1.md`
 
 Other files in `Research/` remain usable support material, but the documents above are the primary public-safe references for the canonical founder docs.
 

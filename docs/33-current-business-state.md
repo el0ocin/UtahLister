@@ -57,6 +57,7 @@ The seller keeps the account, the item, and the payout.
 - Outreach scripts and lead-generation guidance are defined.
 - Website direction and advertising plan are defined.
 - Rescue outreach risk boundaries are now documented.
+- A blog, local SEO, and content-engine strategy is now defined at a handbook level.
 
 ### Research system
 
@@ -91,6 +92,7 @@ Those systems are summarized in [36-private-build-and-systems-summary.md](36-pri
 - repeatable customer proof beyond founder examples
 - controlled validation of the rescue offer
 - tighter founder operating rhythm across intake, delivery, proof, and follow-up
+- tighter coordination across repo, local workspace, flash drive, and Drive
 
 ## What Is Not Done Yet
 

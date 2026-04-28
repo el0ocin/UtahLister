@@ -52,6 +52,22 @@ Nice-to-have later:
 
 - proof library page
 - location or category landing pages
+- problem-first blog or content hub
+
+## Content Engine Role
+
+The website should eventually support a content engine, but the content should stay tightly tied to UtahLister's real offer.
+
+The best topics are:
+
+- stale listing rescue
+- KSL versus Facebook decisions
+- pricing and 48-hour review logic
+- photo and visual-trust guidance
+- local-safe meetup and buyer communication
+- category hubs such as furniture, bikes, tools, baby/kids gear, and outdoor gear
+
+This should be treated as a trust and search layer, not as a generic publishing project.
 
 ## Advertising And Promotion Phases
 
@@ -76,6 +92,7 @@ Once customer proof exists:
 - strengthen Google review flow
 - create category-specific proof snippets
 - improve local discoverability
+- publish problem-first educational content tied to real seller search demand
 
 ### Phase 3: paid experimentation
 
@@ -120,3 +137,5 @@ The private website source and deployable bundle were refreshed in April 2026 to
 - stronger safety and trust blocks
 
 That work improves readiness, but broad promotion should still wait for live production verification and an end-to-end intake submission test.
+
+The April 28, 2026 blog research also clarified that future organic growth should center on local problem-first content instead of broad resale lifestyle publishing.

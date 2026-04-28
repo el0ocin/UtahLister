@@ -35,7 +35,23 @@ Make sure UtahLister appears in the places people check when trust is low:
 - KSL service listing
 - Nextdoor or equivalent local neighborhood channels
 
-### 4. Controlled direct outreach for `Listing Rescue`
+### 4. Problem-first educational content
+
+Use educational content as a slower-burn acquisition and trust channel.
+
+Best fit:
+
+- Utah-specific search questions
+- `KSL vs Facebook Marketplace` comparisons
+- pricing and rescue explainers
+- category-specific posts for furniture, bikes, tools, outdoor gear, and baby/kids items
+- proof-backed case studies
+
+The point is not volume for its own sake.
+
+The point is to capture sellers who already feel the problem UtahLister solves.
+
+### 5. Controlled direct outreach for `Listing Rescue`
 
 Use direct outreach only in narrow, manual cases.
 
@@ -52,7 +68,7 @@ Do not use:
 - fake buyer angles
 - repeated outreach after silence
 
-### 5. Proof-driven follow-up
+### 6. Proof-driven follow-up
 
 Every strong result should feed:
 
@@ -151,6 +167,7 @@ Do not build or scale outreach automation until:
 
 - the repo docs are stable
 - the website copy is finalized
+- the content and CTA structure are stable
 - the manual rescue rules are proven
 - the manual lead stages are clearly defined
 

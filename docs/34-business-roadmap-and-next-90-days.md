@@ -118,14 +118,28 @@ That means:
 
 ### Priority 4
 
-Stabilize the private operating layer.
+Define the content engine without turning it into a distraction.
+
+That means:
+
+- use problem-first Utah search topics
+- publish around pricing, rescue, visual trust, and platform choice
+- build category hubs only where UtahLister already has operational credibility
+- connect every content asset to one of the two service paths
+
+### Priority 5
+
+Stabilize the private operating layer and storage model.
 
 That means:
 
 - keep private code and tooling out of the public repo
-- document the private systems at a business-summary level only
-- make sure tooling supports the service instead of driving it
-- keep dashboard and proof tracking aligned with the public-safe operating model
+- document private systems at the business-summary level only
+- keep Drive as the asset library instead of a second repo mirror
+- keep the flash drive focused on runtime use
+- make local storage rules explicit so research, proof, and working files do not sprawl
+
+This storage discipline matters because the business now has enough material that duplication is starting to create more friction than missing information.
 
 ## What Not To Prioritize Yet
 
