@@ -33,6 +33,7 @@ surface is officially supported and low-risk.
 5. Operator workspace
    - Show the item, images, selected lane, draft listing, and recommended next action.
    - Track status from intake to live listing to sold proof.
+   - Support both `New Listing Build` and `Listing Rescue`.
 
 6. Posting support
    - Start with guided posting, not blind autoposting.
@@ -66,11 +67,24 @@ Core modules:
 - listing draft generator
 - reply-script generator
 - proof tracker
+- status and follow-up tracking
 
 Success condition:
 - one operator can run multiple items quickly without relying on memory or loose notes
 
-### Phase 2: Controlled automation
+### Phase 2: Rescue workflow and controlled automation
+
+Add explicit rescue support before trying to automate more publishing behavior.
+
+Core modules:
+- rescue intake mode
+- listing URL or screenshot capture
+- rescue diagnosis view
+- relist recommendation
+- before/after tracking
+- 48-hour rescue follow-up
+
+Then add automation around the safe middle of the workflow.
 
 Add automation around the safe middle of the workflow.
 
@@ -111,6 +125,8 @@ Until that is verified, guided posting is the correct default.
 - guarded prompt templates
 - explicit structured outputs
 - policy/risk checks before any draft is marked ready
+- actual-photo-first rules for hero image selection
+- rescue-specific structured diagnosis outputs
 
 ## Why not jump straight to full autoposting
 
@@ -131,16 +147,15 @@ manual listing creation, editing, limits, and policy review. I did not verify a
 clean public seller posting API in this pass, so direct autoposting should be
 treated as unverified and higher risk until proven otherwise.
 
-## Recommended next build after the website
+## Recommended next build focus
 
-Build Phase 1 only:
-- operator dashboard
-- intake record
-- image ingest
-- pricing lane output
-- listing draft output
-- reply output
-- proof logging
+Build the internal operator system in this order:
 
-That is the version most likely to save time, improve quality, and avoid creating
-a policy or account problem.
+1. operator dashboard
+2. intake record and item storage
+3. image ingest and review
+4. pricing lane and listing draft output
+5. rescue diagnosis and relist workflow
+6. proof logging and follow-up tracking
+
+That sequencing is more defensible than trying to jump to autoposting or mass browser automation.

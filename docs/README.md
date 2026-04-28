@@ -7,11 +7,11 @@ Use it to understand what UtahLister is, how the service works, how the business
 ## Start Here
 
 1. [33-current-business-state.md](33-current-business-state.md)
-2. [34-business-roadmap-and-next-90-days.md](34-business-roadmap-and-next-90-days.md)
-3. [25-founder-start-here.md](25-founder-start-here.md)
-4. [01-offer-and-pricing.md](01-offer-and-pricing.md)
-5. [03-service-workflow.md](03-service-workflow.md)
-6. [19-marketplace-posting-operating-model.md](19-marketplace-posting-operating-model.md)
+2. [39-unified-service-model.md](39-unified-service-model.md)
+3. [34-business-roadmap-and-next-90-days.md](34-business-roadmap-and-next-90-days.md)
+4. [25-founder-start-here.md](25-founder-start-here.md)
+5. [01-offer-and-pricing.md](01-offer-and-pricing.md)
+6. [40-founder-proof-and-review-summary.md](40-founder-proof-and-review-summary.md)
 7. [35-public-repo-boundary.md](35-public-repo-boundary.md)
 8. [36-private-build-and-systems-summary.md](36-private-build-and-systems-summary.md)
 9. [37-launch-readiness-summary.md](37-launch-readiness-summary.md)
@@ -19,8 +19,10 @@ Use it to understand what UtahLister is, how the service works, how the business
 ## Company Overview And Business State
 
 - [33-current-business-state.md](33-current-business-state.md)
+- [39-unified-service-model.md](39-unified-service-model.md)
 - [34-business-roadmap-and-next-90-days.md](34-business-roadmap-and-next-90-days.md)
 - [25-founder-start-here.md](25-founder-start-here.md)
+- [40-founder-proof-and-review-summary.md](40-founder-proof-and-review-summary.md)
 - [18-company-knowledgebase.md](18-company-knowledgebase.md)
 - [35-public-repo-boundary.md](35-public-repo-boundary.md)
 - [36-private-build-and-systems-summary.md](36-private-build-and-systems-summary.md)
@@ -31,6 +33,8 @@ Use it to understand what UtahLister is, how the service works, how the business
 - [26-market-and-target-audience.md](26-market-and-target-audience.md)
 - [27-competition-and-demand.md](27-competition-and-demand.md)
 - [28-brand-and-positioning.md](28-brand-and-positioning.md)
+- [38-listing-rescue-service-model.md](38-listing-rescue-service-model.md)
+- [39-unified-service-model.md](39-unified-service-model.md)
 - [15-utahlister-product-roadmap.md](15-utahlister-product-roadmap.md)
 - [19-marketplace-posting-operating-model.md](19-marketplace-posting-operating-model.md)
 
@@ -52,6 +56,7 @@ Use it to understand what UtahLister is, how the service works, how the business
 - [22-outreach-launch-pack.md](22-outreach-launch-pack.md)
 - [30-lead-generation-and-outreach-system.md](30-lead-generation-and-outreach-system.md)
 - [31-website-and-advertising-plan.md](31-website-and-advertising-plan.md)
+- [40-founder-proof-and-review-summary.md](40-founder-proof-and-review-summary.md)
 
 ## Systems, Templates, And Research
 
@@ -84,3 +89,4 @@ It should not expose:
 - customer data
 - raw proof screenshots
 - exact deployment or security implementation details
+- private app architecture notes or implementation files

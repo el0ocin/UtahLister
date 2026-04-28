@@ -23,3 +23,25 @@ materially updated.
 - durable conclusions should be reflected in [docs](../docs)
 - structured source and decision records should be mirrored in Notion
 - research that changes operations should result in a playbook update
+
+## Current public-safe anchor sets
+
+The highest-signal public-safe research currently includes:
+
+- the April 8, 2026 deep research pack series
+- the April 18, 2026 rescue decision pack covering:
+  - outreach policy
+  - online image usage policy
+  - rescue intake design
+  - stale-listing failure analysis
+  - rescue pricing
+
+## What should stay out of the public repo
+
+Do not treat this folder as a dump for:
+
+- private app implementation notes
+- raw proof screenshots
+- copied binaries or working exports
+- internal code files
+- private architecture drafts that would expose the build

@@ -2,15 +2,20 @@
 
 ## Short Version
 
-UtahLister is a structured pre-launch service business.
+UtahLister is a structured pre-launch service business with a clearer operating model than it had earlier in April 2026.
 
-The business model, offer, delivery flow, outreach system, and research base are defined. The company also has private operator tooling in progress, but the business is not yet at a broad public-launch stage.
+The business model, service paths, delivery flow, outreach rules, proof strategy, and research base are defined. Private operator tooling and private website work are in progress, but the business is not yet at a broad public-launch stage.
 
 ## What UtahLister Is
 
 UtahLister is a Utah-focused listing-prep service for local sellers.
 
-The customer sends photos and a few item details. UtahLister returns:
+The business now has two equal entry paths:
+
+- `New Listing Build`
+- `Listing Rescue`
+
+The seller sends photos, a live listing URL, or a few item details. UtahLister returns:
 
 - pricing guidance
 - Facebook Marketplace copy
@@ -28,11 +33,13 @@ The seller keeps the account, the item, and the payout.
 - UtahLister is a service business first, not a software product first.
 - The default operating model is seller-owned accounts with UtahLister-prepared listing packages.
 - The core wedge is Utah local pickup items, especially furniture, home goods, and outdoor gear.
+- The public business model is now explicitly dual-path, not single-path.
 
 ### Offer
 
 - The one-item beta offer is defined.
-- Pricing bands are defined.
+- Rescue packaging is defined.
+- Pricing bands and rescue tiers are defined.
 - Quick-sale and max-profit lanes are defined.
 - Delivery expectations and 48-hour review logic are defined.
 
@@ -49,12 +56,20 @@ The seller keeps the account, the item, and the payout.
 - Positioning and brand language are defined.
 - Outreach scripts and lead-generation guidance are defined.
 - Website direction and advertising plan are defined.
+- Rescue outreach risk boundaries are now documented.
 
 ### Research system
 
 - Research packs exist.
 - Source tracking exists.
 - The repo already contains a durable research and documentation layer.
+- April 2026 rescue research added policy, pricing, intake, and target-selection guidance.
+
+### Proof and trust
+
+- founder example proof now includes several sold-item summaries beyond the Trek case
+- seller review summaries now exist in sanitized form
+- public proof usage rules are clearer than they were earlier in the month
 
 ## What Exists Privately But Is Not In This Repo
 
@@ -71,10 +86,10 @@ Those systems are summarized in [36-private-build-and-systems-summary.md](36-pri
 
 ## What Is Still In Progress
 
-- final public website and intake path stability
+- live website deployment verification and intake-path stability
 - cleaner launch posture and operational hardening
-- repeatable customer proof and testimonials
-- fully stabilized Notion and workflow execution
+- repeatable customer proof beyond founder examples
+- controlled validation of the rescue offer
 - tighter founder operating rhythm across intake, delivery, proof, and follow-up
 
 ## What Is Not Done Yet

@@ -46,6 +46,7 @@ What matters in this phase:
 - real proof capture
 - real testimonials
 - stable follow-up rhythm
+- rescue validation without policy drift
 
 ## Phase 3: Controlled Launch
 
@@ -87,7 +88,7 @@ Make the one-item service operationally clean.
 That means:
 
 - finalize the public-safe repo and business handbook
-- keep the offer simple
+- keep the offer simple and dual-path
 - keep the seller-owned-account model explicit
 - tighten intake and delivery checklists
 
@@ -101,6 +102,7 @@ That means:
 - document outcomes
 - collect proof and testimonials
 - learn where the workflow breaks
+- validate the rescue offer on founder inventory before scaling rescue outreach
 
 ### Priority 3
 
@@ -112,6 +114,7 @@ That means:
 - make the intake path obvious
 - use proof carefully and honestly
 - keep the brand grounded and local
+- verify the live site and form routing before broad promotion
 
 ### Priority 4
 
@@ -122,13 +125,14 @@ That means:
 - keep private code and tooling out of the public repo
 - document the private systems at a business-summary level only
 - make sure tooling supports the service instead of driving it
+- keep dashboard and proof tracking aligned with the public-safe operating model
 
 ## What Not To Prioritize Yet
 
 - full autoposting
 - broad automation for its own sake
 - multi-platform sprawl
-- high-complexity dashboards
+- cold DM scale as the main acquisition engine
 - public claims that are not yet backed by proof
 
 ## Success Definition
@@ -137,5 +141,6 @@ UtahLister is ready for the next phase when:
 
 - the founder can run jobs without improvising the workflow every time
 - proof and testimonials exist
+- the rescue offer has been tested in a controlled way
 - the public-facing story matches the actual service
 - the private tooling supports delivery without becoming the product itself

@@ -4,7 +4,7 @@ This is the operating model for how UtahLister should attract, qualify, and conv
 
 ## Channel Priority Order
 
-### 1. Warm local network
+### 1. Warm local network for `New Listing Build`
 
 Start with:
 
@@ -35,15 +35,22 @@ Make sure UtahLister appears in the places people check when trust is low:
 - KSL service listing
 - Nextdoor or equivalent local neighborhood channels
 
-### 4. Direct outreach
+### 4. Controlled direct outreach for `Listing Rescue`
 
-Use direct outreach for partner development, not random mass cold outreach.
+Use direct outreach only in narrow, manual cases.
 
 Best use cases:
 
-- introducing UtahLister to organizers and movers
-- sharing one clean proof asset
-- offering a simple one-item starting point for their clients
+- founder testing on your own stale listings first
+- one-to-one rescue review offers on clearly stale listings
+- partner development with organizers, movers, and similar referrers
+
+Do not use:
+
+- bulk seller DMs
+- scraping or automated outreach
+- fake buyer angles
+- repeated outreach after silence
 
 ### 5. Proof-driven follow-up
 
@@ -56,12 +63,23 @@ Every strong result should feed:
 
 ## The Lead Flow
 
-1. Stranger sees proof, referral, or website
-2. Lead submits one-item intake
+### New Listing Build flow
+
+1. Lead sees proof, referral, partner mention, or website
+2. Lead starts with one-item intake
 3. UtahLister qualifies the item and seller fit
 4. Lead becomes an active listing job
-5. Delivery gets completed
+5. Delivery is completed
 6. Proof, outcome notes, and possible review request are captured
+
+### Listing Rescue flow
+
+1. UtahLister identifies or receives a stale listing candidate
+2. Seller receives one permission-based rescue offer
+3. If interested, seller completes a lightweight rescue screen
+4. UtahLister qualifies whether the listing is actually rescuable
+5. Seller completes dynamic follow-up intake if needed
+6. Rescue package, relist guidance, and follow-up are captured
 
 ## Best Messaging Angles
 
@@ -79,14 +97,21 @@ Do not lead with:
 - AI
 - "optimization"
 - generic social-media-style hype
+- price criticism in the first touch
 
 ## Best Entry Offer
 
-The right first CTA is:
+The right first CTA depends on the path.
+
+For new work:
 
 `Start with one item.`
 
-That keeps the buying decision small and the operational system clean.
+For rescue:
+
+`Get one stale listing reviewed first.`
+
+That keeps the decision small and the operational system clean.
 
 ## Outreach Rhythm
 
@@ -96,6 +121,7 @@ That keeps the buying decision small and the operational system clean.
 - follow up on existing warm leads
 - publish or refresh one proof-driven asset
 - review which channel produced the highest-quality conversations
+- run rescue only as a tiny manual pilot, not a scale channel
 
 ### Monthly founder cadence
 
@@ -121,13 +147,11 @@ Low-quality leads usually show:
 
 ## Automation Rule
 
-UtahLister already has lead automation in place.
-
-Do not tune that automation until:
+Do not build or scale outreach automation until:
 
 - the repo docs are stable
 - the website copy is finalized
-- the Notion system is built
+- the manual rescue rules are proven
 - the manual lead stages are clearly defined
 
-Until then, use manual review and the current workflow to avoid optimizing around a moving target.
+Until then, use manual review and local-trust channels to avoid optimizing around a moving target.

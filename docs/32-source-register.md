@@ -13,6 +13,9 @@ This register maps the canonical UtahLister docs to their supporting source mate
 | [29-beginner-founder-handbook.md](29-beginner-founder-handbook.md) | `00-repo-system.md`, `01-offer-and-pricing.md`, `03-service-workflow.md`, `13-site-launch-checklist.md`, `14-security-privacy-baseline.md` | `Internal-Operating-System`, `Official-SOPs`, `Legal+Systems+Automation+Defensibility` | Drive mirror of the research archive |
 | [30-lead-generation-and-outreach-system.md](30-lead-generation-and-outreach-system.md) | `10-outreach-scripts.md`, `22-outreach-launch-pack.md`, `17-homepage-research-brief.md`, `site/index.html` | `Website+Trust+Marketing`, `Market+Target-Audience` | Drive mirror of website and outreach research |
 | [31-website-and-advertising-plan.md](31-website-and-advertising-plan.md) | `17-homepage-research-brief.md`, `16-web-design-preferences.md`, `13-site-launch-checklist.md`, `site/README.md` | `Website+Trust+Marketing`, `Internal-Operating-System` | Drive prompts doc and mirrored website research |
+| [38-listing-rescue-service-model.md](38-listing-rescue-service-model.md) | `01-offer-and-pricing.md`, `03-service-workflow.md`, `30-lead-generation-and-outreach-system.md` | `2026-04-18__UtahLister__Research__Listing-Rescue-Decision-Pack__v1.md` | April 2026 rescue research set |
+| [39-unified-service-model.md](39-unified-service-model.md) | `01-offer-and-pricing.md`, `38-listing-rescue-service-model.md`, `19-marketplace-posting-operating-model.md` | `Website+Trust+Marketing`, April 2026 rescue research set | Canonical dual-offer definition |
+| [40-founder-proof-and-review-summary.md](40-founder-proof-and-review-summary.md) | `11-case-study-trek-marlin-5.md` | sanitized founder proof notes, sold-item summaries, seller-review summaries | Raw screenshots and profile-image source files remain private |
 
 ## Research Archive Files
 
@@ -24,8 +27,9 @@ The local `Research/` folder is the main durable archive for the current deep re
 - `2026-04-08__UtahLister__Research__Internal-Operating-System__v1.md`
 - `2026-04-08__UtahLister__Research__Official-SOPs__v1.md`
 - `2026-04-08__UtahLister__Research__Legal+Systems+Automation+Defensibility__v1.md`
+- `2026-04-18__UtahLister__Research__Listing-Rescue-Decision-Pack__v1.md`
 
-Other files in `Research/` remain usable support material, but the documents above are the primary references for the canonical founder docs.
+Other files in `Research/` remain usable support material, but the documents above are the primary public-safe references for the canonical founder docs.
 
 ## Google Drive Reference
 

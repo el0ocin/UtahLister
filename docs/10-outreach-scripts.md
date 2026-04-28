@@ -1,33 +1,58 @@
 # Outreach Scripts
 
-Use these to get the first paying clients fast.
+Use these as public-safe script baselines.
 
-## Warm DM
-`Hey, I am testing UtahLister, a local service for people who have stuff to sell but do not want to build the listing themselves. Send the photos and details you already have, and UtahLister turns them into stronger Facebook Marketplace + KSL listings with pricing, copy, photo order, and buyer replies already figured out. Beta starts very low depending on the item value. Want details?`
+The outreach system now has two lanes:
 
-## Slightly more casual version
-`If you have stuff you want gone but have not actually listed yet, UtahLister can do the annoying part with you. Send the photos and a few notes, and you get back a stronger Marketplace + KSL listing without having to figure out the pricing and wording yourself.`
+- `New Listing Build`
+- `Listing Rescue`
 
-## Facebook group post
-`Testing UtahLister for anyone in Utah County who has stuff to sell but keeps putting it off. You already have the item and the photos. UtahLister turns that into a stronger Marketplace + KSL listing with pricing, copy, image order, and buyer replies already mapped out. Beta pricing starts low and scales by item value so it is easy to test. Message me if you want one of the first spots.`
+## Warm intro for New Listing Build
+
+`I run UtahLister, a local service that turns your item photos and a few notes into a ready-to-post Facebook Marketplace and KSL listing package. You keep your account and payout. If you have something you keep meaning to sell, I can help you get it posted without building the whole listing from scratch yourself.`
 
 ## Follow-up after interest
-`Perfect. The beta offer is one item at a time. Once the photos and notes are clean, UtahLister turns them into the final Facebook Marketplace + KSL listing package within 48 hours, and I can guide the posting step if needed. For lower-value items the beta can be as low as $5. If you want to do it, I will send the intake template next.`
+
+`The easiest way to start is one item at a time. Once the photos and notes are clean, UtahLister builds the listing package with pricing lane, copy, photo order, and buyer replies already mapped out.`
 
 ## After they ask what you need
-`I need the item photos, a few notes about each item, your city or pickup area, whether you want the quick-sale route or the max-profit route, and the platforms you want me to use. If you already know your hard no-go number, you can include that too, but I can price it for you.`
+
+`For a new listing build, I need the item photos, a few notes about the item, your city or pickup area, and whether you care more about quick sale or stronger price. If you already know your hard floor, you can include that too, but I can price it for you.`
+
+## Partner intro
+
+`UtahLister helps your clients turn good local-sale items into stronger Marketplace and KSL listings without password handoff or payout handling. It is a simple one-item starting offer for people who have the item and photos but keep delaying the actual listing work.`
+
+## Listing Rescue opening message
+
+Use rescue only as a manual, one-to-one, permission-based touch.
+
+`Hey, not trying to buy this item. I run a Utah listing-help service and this looks like a stronger item than the listing is making it seem. If you want, I can send one short suggestion here for title, price lane, or photo order.`
+
+## Rescue follow-up rule
+
+- one touch only unless they reply
+- no links in the first message
+- no fake buyer angle
+- no mass outreach or automation
+- do not lead with "your listing is bad" or "your price is wrong"
 
 ## Simple explainer
-`You already have the item and the photos. UtahLister turns that into stronger pricing, sharper listing copy, a cleaner photo order, and buyer replies that keep the conversation moving.`
+
+`UtahLister helps Utah sellers build or rescue local marketplace listings with stronger pricing, clearer copy, better image order, and cleaner buyer communication.`
 
 ## Proof-backed short post
-`Quick UtahLister proof: a Trek bike that sat for 7 days at $600 got a cleaner fast-sale repost at $475 and sold the next day at full price after 166 clicks and 8 buyer conversations. A Dr. Pen listing sold within about 24 hours after the pricing and clarity pass. If you have stuff to sell but keep putting it off, UtahLister is built for exactly that.`
+
+`Founder example proof: a Trek Marlin 5 that had already sat at a higher price was repositioned at $475, drew 166 clicks and 8 buyer conversations in under 24 hours, and sold at full price after a $380 opening offer. That is the kind of clarity-and-pricing fix UtahLister is built to do.`
 
 ## Ask for testimonial after a win
-`Would you be open to giving me a short testimonial about how the process felt and whether it helped you finally get the item listed and sold?`
+
+`Would you be open to giving me a short review about how the process felt and whether it helped the item get listed or sold more clearly?`
 
 ## Ask for referral
-`If you know anyone else with clutter, moving piles, or items they keep meaning to sell, I would love an intro.`
+
+`If you know anyone else who has good items sitting unsold or unlisted, I would appreciate an intro.`
 
 ## One-line positioning statement
-`UtahLister turns item photos and details into stronger marketplace listings with less work on the seller's side.`
+
+`UtahLister helps Utah sellers build or rescue Marketplace and KSL listings while the seller keeps the account and payout.`

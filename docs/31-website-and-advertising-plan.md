@@ -12,17 +12,19 @@ It needs to help a cautious local seller decide:
 - this is clear
 - this feels safe
 - I can start with one item
+- I understand whether I need a new listing build or a listing rescue
 
 ## Homepage Message Order
 
 The homepage should communicate, in this order:
 
 1. what UtahLister is
-2. who it is for
-3. why it is trustworthy
-4. what the seller gets
-5. how the process works
-6. how to start
+2. the two service paths
+3. who it is for
+4. why it is trustworthy
+5. what the seller gets
+6. how the process works
+7. how to start
 
 ## Required Trust Stack
 
@@ -32,6 +34,7 @@ The live site should always make these points obvious:
 - no normal password handoff
 - proof is visible and specific
 - founder proof is clearly labeled as example proof
+- customer reviews are real and consented
 - the offer is productized and easy to understand
 
 ## Current Website Scope
@@ -39,14 +42,15 @@ The live site should always make these points obvious:
 The site should stay simple in this phase:
 
 - one strong homepage
+- one service-path-aware intake flow
+- one sample deliverable page or download
 - working intake form
 - clear thank-you flow
-- visible proof and boundaries
+- visible proof, reviews, and safety boundaries
 
 Nice-to-have later:
 
 - proof library page
-- sample package download
 - location or category landing pages
 
 ## Advertising And Promotion Phases
@@ -60,6 +64,7 @@ Use:
 - Google Business Profile
 - KSL service listing
 - local social and neighborhood channels
+- carefully bounded rescue proof, not broad cold outreach
 
 The goal is proof and reviews, not traffic for its own sake.
 
@@ -84,10 +89,11 @@ Only test paid channels after:
 ## Launch Checklist
 
 - slogan and logo are final
-- homepage copy matches the productized offer
+- homepage copy matches the dual-offer model
 - proof labels are correct
+- review usage is compliant and privacy-safe
 - unused assets are removed
-- form destination is live
+- live intake actually submits into the operating system
 - thank-you page is aligned
 - repo docs and site copy do not contradict each other
 
@@ -102,3 +108,15 @@ Use these signals to judge the site:
 - proof-worthy outcomes created from site-generated leads
 
 If traffic rises but good intakes do not, fix the message before buying more attention.
+
+## Current status
+
+The private website source and deployable bundle were refreshed in April 2026 to support:
+
+- dual-offer messaging
+- sample package presentation
+- founder proof cards
+- seller reviews
+- stronger safety and trust blocks
+
+That work improves readiness, but broad promotion should still wait for live production verification and an end-to-end intake submission test.

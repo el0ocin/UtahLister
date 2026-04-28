@@ -25,6 +25,10 @@ __pycache__/
 /Outreach Build/
 /Proof of Sale_FBMP/
 /Proof of Sale_KSL/
+/Fbmp reviews/
+/Gemini SOS Rescue Run/
+/Listed&Sold_Item_Photos/
+/Resale_Images/
 
 # Raw audit artifacts stay private; only sanitized summaries belong in docs
 /production_readiness_audit.md
@@ -41,3 +45,33 @@ __pycache__/
 /docs/20-google-drive-archive-checklist.md
 /docs/21-workspace-drive-structure.md
 /docs/24-notion-agent-setup.md
+
+# Local recovery / backup docs used to rebuild the handbook
+/Research/Repo_Docs/
+/Research/Blog Research/
+/Research/2026-04-18_Utahlister_Research_Facebook Marketplace Outreach Policy.md
+/Research/2026-04-18_Utahlister_Research_Online Image Usage Policy.md
+/Research/2026-04-18_Utahlister_Research_Rescue intake design research.md
+/Research/2026-04-18_Utahlister_Research_UtahLister Listing Rescue Analysis.md
+/Research/2026-04-18_Utahlister_Research_UtahLister Pricing Model.md
+
+# Private research binaries, raw assets, and implementation files
+/Research/*.docx
+/Research/*.pdf
+/Research/*.html
+/Research/*.py
+/Research/proof-results.csv
+/Research/Utahlister Listing Automation Plan_ Populating the Template Matrix*
+/Research/Utahlister Listing Copy Engine_ Architecture & Development Plan
+/Research/Utahlister Phase 1_ Furniture Listing Templates
+/Research/Utahlister_ Business Manager Audit & Strategy Report
+/Research/automation_api_research.md
+/Research/delivery-summary-template.md
+/Research/furniture_template_research.md
+/Research/listing_copy_engine_notes.md
+/Research/listing_copy_engine_research_complete.md
+/Research/posteverywhere.ai_blog_how-the-facebook-algorithm-works.md
+/Research/production_readiness_audit.md
+/Research/research_notes.md
+/Research/security_best_practices_report.md
+/Research/Utahlister_ Hero Image Enhancement Workflow & SOP.md
