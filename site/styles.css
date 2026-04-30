@@ -2184,6 +2184,13 @@ textarea {
   color: var(--canyon-deep);
 }
 
+.form-subsection-note {
+  margin: -4px 0 0;
+  font-size: 0.86rem;
+  color: var(--ink-mute);
+  line-height: 1.5;
+}
+
 .input-grid-three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -2377,6 +2384,10 @@ textarea {
   color: var(--ink-mute);
   line-height: 1.5;
   width: 100%;
+}
+
+.form-note-disclosure {
+  max-width: 72ch;
 }
 
 /* Updated green rgba throughout (for elements not using CSS vars) */

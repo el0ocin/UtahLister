@@ -335,6 +335,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!slides.length || !nextBtn || !prevBtn) return;
 
   let currentIndex = 0;
+  let autoRotateId = null;
+  const autoRotateMs = 4500;
+
+  prevBtn.textContent = '❮';
+  nextBtn.textContent = '❯';
 
   function updateCarousel() {
     slides.forEach((slide, index) => {
@@ -344,15 +349,50 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  nextBtn.addEventListener('click', () => {
+  function goToNext() {
     currentIndex = (currentIndex + 1) % slides.length;
     updateCarousel();
+  }
+
+  function stopAutoRotate() {
+    if (autoRotateId) {
+      window.clearInterval(autoRotateId);
+      autoRotateId = null;
+    }
+  }
+
+  function startAutoRotate() {
+    stopAutoRotate();
+    autoRotateId = window.setInterval(goToNext, autoRotateMs);
+  }
+
+  function resetAutoRotate() {
+    startAutoRotate();
+  }
+
+  nextBtn.addEventListener('click', () => {
+    goToNext();
+    resetAutoRotate();
   });
 
   prevBtn.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     updateCarousel();
+    resetAutoRotate();
+  });
+
+  carousel.addEventListener('mouseenter', stopAutoRotate);
+  carousel.addEventListener('mouseleave', startAutoRotate);
+  carousel.addEventListener('focusin', stopAutoRotate);
+  carousel.addEventListener('focusout', startAutoRotate);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopAutoRotate();
+    } else {
+      startAutoRotate();
+    }
   });
 
   updateCarousel();
+  startAutoRotate();
 });
