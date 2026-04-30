@@ -277,19 +277,23 @@
 
 // Carousel functionality for the homepage listing package preview
 document.addEventListener('DOMContentLoaded', () => {
-  const track = document.querySelector('.carousel-track');
-  if (!track) return; // Only runs if the carousel exists on the page
+  const carousel = document.querySelector('.package-carousel');
+  if (!carousel) return;
 
-  const slides = Array.from(track.children);
-  const nextBtn = document.querySelector('.next-btn');
-  const prevBtn = document.querySelector('.prev-btn');
+  const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+  const nextBtn = carousel.querySelector('.next-btn');
+  const prevBtn = carousel.querySelector('.prev-btn');
+
+  if (!slides.length || !nextBtn || !prevBtn) return;
 
   let currentIndex = 0;
 
   function updateCarousel() {
-    // Divide the 100% translation by the total number of slides 
-    // so it moves exactly one image-width at a time.
-    track.style.transform = `translateX(-${(currentIndex * 100) / slides.length}%)`;
+    slides.forEach((slide, index) => {
+      const active = index === currentIndex;
+      slide.classList.toggle('is-active', active);
+      slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+    });
   }
 
   nextBtn.addEventListener('click', () => {
@@ -301,4 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     updateCarousel();
   });
+
+  updateCarousel();
 });

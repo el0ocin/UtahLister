@@ -23,17 +23,15 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --site-width: min(1240px, calc(100% - 40px));
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-display: "Iowan Old Style", Baskerville, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --font-body: "Geist", "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "Geist Mono", "SF Mono", Menlo, monospace;
 }
 
-* {
-  * {
-    box-sizing: border-box;
-    font-variant-ligatures: none !important;
-    font-feature-settings: "liga" 0, "clig" 0, "calt" 0 !important;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -53,9 +51,8 @@ body {
     linear-gradient(180deg, #fcf8f2 0%, var(--bg) 100%);
   -webkit-font-smoothing: antialiased;
   text-rendering: auto;
-  /* Fixes the weird merging */
   font-variant-ligatures: none;
-  /* Stops f's from connecting to other letters */
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
 }
 
 img {
@@ -321,7 +318,7 @@ main {
 
 .hero h1 em {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   background: none;
   -webkit-text-fill-color: var(--canyon-deep);
   color: var(--canyon-deep);
@@ -2886,13 +2883,17 @@ textarea {
 }
 
 .carousel-track {
-  display: flex;
-  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
 }
 
 .carousel-slide {
-  min-width: 100%;
+  display: none;
+  width: 100%;
   height: auto;
+  border-radius: 12px;
+}
+
+.carousel-slide.is-active {
   display: block;
 }
 
