@@ -1,0 +1,23 @@
+UtahLister Intake Checklist
+
+Send this for each item:
+
+1. Service path: New Listing Build, Listing Rescue, or not sure yet
+2. Item name
+3. Live listing URL if the item is already posted
+4. What is included
+5. Condition
+6. City or region
+7. Pickup landmark or neighborhood
+8. Sale goal: quick sale, max profit, or not sure
+9. Private hard floor if you already know it (optional)
+10. Photo folder link if you have one
+11. Anything that should be disclosed
+12. Best buyer contact method
+
+Helpful extras:
+- original retail price if you know it
+- why you are selling it
+- whether porch pickup, driveway pickup, or public meetup is preferred
+- if the item is already live, what feels weak or stalled about the current listing
+- if you do not know the price, UtahLister can price it for you

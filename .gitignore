@@ -17,7 +17,6 @@ __pycache__/
 
 # Public-safe repo boundary: private code and runtime stay out of Git
 /apps/
-/site/
 /output/
 /misc items for resale/
 /Marketplace Listing Ops/
