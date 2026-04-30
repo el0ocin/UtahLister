@@ -136,9 +136,49 @@
   var fieldSets = {
     new_listing_build: document.getElementById("fields-new-listing"),
     listing_rescue: document.getElementById("fields-rescue"),
-    buy_direct: document.getElementById("fields-buy"),
     not_sure: document.getElementById("fields-not-sure")
   };
+  var categoryRoots = Array.prototype.slice.call(document.querySelectorAll("[data-category-root]"));
+
+  function syncFields(section, isVisible) {
+    if (!section) return;
+    if (isVisible) {
+      section.removeAttribute("hidden");
+    } else {
+      section.setAttribute("hidden", "");
+    }
+
+    Array.prototype.forEach.call(
+      section.querySelectorAll("input, select, textarea"),
+      function (field) {
+        field.disabled = !isVisible;
+        if (field.dataset && field.dataset.requiredVisible === "true") {
+          field.required = isVisible;
+        }
+      }
+    );
+  }
+
+  function syncCategoryFields(root) {
+    if (!root) return;
+    var select = root.parentElement.querySelector("[data-category-select]");
+    var selected = select ? select.value : "";
+    Array.prototype.forEach.call(
+      root.querySelectorAll("[data-category-group]"),
+      function (group) {
+        var isVisible = group.getAttribute("data-category-group") === selected;
+        syncFields(group, isVisible);
+      }
+    );
+  }
+
+  [
+    document.getElementById("fields-new-listing-legacy"),
+    document.getElementById("fields-rescue-legacy"),
+    document.getElementById("fields-not-sure-legacy")
+  ].forEach(function (legacySection) {
+    syncFields(legacySection, false);
+  });
 
   /* pre-select path if a card CTA was clicked (data-path attribute) */
   document.querySelectorAll("[data-path]").forEach(function (link) {
@@ -155,12 +195,11 @@
     Object.keys(fieldSets).forEach(function (key) {
       var el = fieldSets[key];
       if (!el) return;
-      if (key === val) {
-        el.removeAttribute("hidden");
-      } else {
-        el.setAttribute("hidden", "");
-      }
+      syncFields(el, key === val);
     });
+
+    categoryRoots.forEach(syncCategoryFields);
+
     /* Show submit button only after a path is selected */
     if (contactActions) {
       if (val && val !== "") {
@@ -178,6 +217,15 @@
     /* Run once on load in case browser restored a value */
     showFieldsForPath(serviceSelect.value);
   }
+
+  document.querySelectorAll("[data-category-select]").forEach(function (select) {
+    select.addEventListener("change", function () {
+      var root = select.closest(".form-fields-conditional");
+      if (!root) return;
+      var categoryRoot = root.querySelector("[data-category-root]");
+      syncCategoryFields(categoryRoot);
+    });
+  });
 
   /* ── Newsletter form ─────────────────────────────────────────── */
   if (newsletterForm && newsletterStatus) {

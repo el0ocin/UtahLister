@@ -459,7 +459,7 @@
         </label>
 
         <!-- NEW LISTING BUILD fields -->
-        <div class="form-fields-conditional" id="fields-new-listing" hidden>
+        <div class="form-fields-conditional" id="fields-new-listing-legacy" hidden>
           <div class="input-grid">
             <label>Item name
               <input type="text" name="item" placeholder="What do you want to sell?" maxlength="140">
@@ -498,7 +498,7 @@
         </div>
 
         <!-- LISTING RESCUE fields -->
-        <div class="form-fields-conditional" id="fields-rescue" hidden>
+        <div class="form-fields-conditional" id="fields-rescue-legacy" hidden>
           <label>Live listing URL
             <input type="url" name="listing_url" maxlength="2000"
               placeholder="Facebook Marketplace or KSL Classifieds link">
@@ -524,11 +524,641 @@
         </div>
 
         <!-- NOT SURE fields -->
-        <div class="form-fields-conditional" id="fields-not-sure" hidden>
+        <div class="form-fields-conditional" id="fields-not-sure-legacy" hidden>
           <label>Tell us what you're working with
             <textarea name="general_notes" rows="5" maxlength="2000"
               placeholder="Describe the item, the situation, and what outcome you're hoping for — we'll figure out the right path."></textarea>
           </label>
+        </div>
+
+        <div class="form-fields-conditional" id="fields-new-listing" hidden>
+          <div class="form-subsection">
+            <p class="form-subsection-title">Item basics</p>
+            <div class="input-grid">
+              <label>Item name
+                <input type="text" name="item" placeholder="What do you want to sell?" maxlength="140" data-required-visible="true">
+              </label>
+              <label>Item category
+                <select name="item_category" id="new-item-category" data-category-select data-required-visible="true">
+                  <option value="">Select a category</option>
+                  <option value="furniture_home">Furniture / home goods</option>
+                  <option value="decor_small_home">Home decor / small household item</option>
+                  <option value="clothing_shoes">Clothing / shoes / accessories</option>
+                  <option value="electronics">Electronics / tech</option>
+                  <option value="bikes_outdoor">Bike / outdoor gear / sporting goods</option>
+                  <option value="tools_equipment">Tools / equipment</option>
+                  <option value="baby_kids">Baby / kids gear</option>
+                  <option value="appliances">Appliance / home equipment</option>
+                  <option value="collectibles_media">Collectible / toy / book / hobby item</option>
+                  <option value="other">Other / not sure</option>
+                </select>
+              </label>
+            </div>
+            <div class="input-grid">
+              <label>Estimated item value
+                <select name="item_value_range_v2">
+                  <option value="">Select a range</option>
+                  <option value="under_50">Under $50</option>
+                  <option value="50_149">$50 - $149</option>
+                  <option value="150_299">$150 - $299</option>
+                  <option value="300_599">$300 - $599</option>
+                  <option value="600_plus">$600+</option>
+                </select>
+              </label>
+              <label>Sale goal
+                <select name="sale_goal_v2" data-required-visible="true">
+                  <option value="">Select one</option>
+                  <option value="quick_sale">Quick sale</option>
+                  <option value="max_profit">Max profit</option>
+                  <option value="not_sure">Not sure yet</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-subsection">
+            <p class="form-subsection-title">Where and how you want it sold</p>
+            <fieldset class="checkbox-group">
+              <legend>Which marketplaces should UtahLister build for?</legend>
+              <div class="checkbox-grid">
+                <label class="checkbox-card"><input type="checkbox" name="marketplaces_requested" value="facebook_marketplace"> Facebook Marketplace</label>
+                <label class="checkbox-card"><input type="checkbox" name="marketplaces_requested" value="ksl"> KSL</label>
+                <label class="checkbox-card"><input type="checkbox" name="marketplaces_requested" value="nextdoor"> Nextdoor</label>
+                <label class="checkbox-card"><input type="checkbox" name="marketplaces_requested" value="craigslist"> Craigslist</label>
+              </div>
+            </fieldset>
+            <div class="input-grid input-grid-three">
+              <label>City / region
+                <input type="text" name="city_region_v2" placeholder="Lehi, Provo, Draper" maxlength="80" data-required-visible="true">
+              </label>
+              <label>ZIP code
+                <input type="text" name="zip_code" placeholder="84043" maxlength="10" inputmode="numeric">
+              </label>
+              <label>Public pickup landmark
+                <input type="text" name="pickup_landmark" placeholder="Holbrook Farms Park, Smith's on Main" maxlength="140" data-required-visible="true">
+              </label>
+            </div>
+            <label>Photo folder link
+              <input type="url" name="photo_folder_link_v2" maxlength="2000" placeholder="Google Drive, iCloud, Dropbox..." data-required-visible="true">
+            </label>
+          </div>
+
+          <div class="form-subsection">
+            <p class="form-subsection-title">Condition and brain dump</p>
+            <div class="input-grid">
+              <label>Condition
+                <select name="condition_v2" data-required-visible="true">
+                  <option value="">Select one</option>
+                  <option value="new">New / never used</option>
+                  <option value="like_new">Like new</option>
+                  <option value="good">Good / lightly used</option>
+                  <option value="fair">Fair / visible wear</option>
+                  <option value="parts">For parts / not fully working</option>
+                </select>
+              </label>
+              <label>Brand / model known already?
+                <input type="text" name="known_brand_model" placeholder="Nike Pro Dri-FIT CZ9857-010, Trek Marlin 5..." maxlength="160">
+              </label>
+            </div>
+            <label>Why did you choose that condition?
+              <textarea name="condition_reason_v2" rows="3" maxlength="1200" placeholder="Tell us what makes it new, like new, or used. Mention flaws, wear, tags, packaging, missing parts, or anything important." data-required-visible="true"></textarea>
+            </label>
+            <label>Brain dump everything you know about the item
+              <textarea name="notes_v2" rows="6" maxlength="4000" placeholder="Paste every detail you have: what's included, exact specs, measurements, flaws, where you bought it, local comps, retail price, usage history, pickup constraints, and anything buyers usually ask." data-required-visible="true"></textarea>
+            </label>
+          </div>
+
+          <div class="form-subsection category-subsection" data-category-root>
+            <p class="form-subsection-title">Category-specific details</p>
+
+            <div class="category-fields" data-category-group="furniture_home" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Width
+                  <input type="text" name="furniture_width" placeholder="42 in" maxlength="40" data-required-visible="true">
+                </label>
+                <label>Depth
+                  <input type="text" name="furniture_depth" placeholder="18 in" maxlength="40" data-required-visible="true">
+                </label>
+                <label>Height
+                  <input type="text" name="furniture_height" placeholder="31 in" maxlength="40" data-required-visible="true">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Material / finish
+                  <input type="text" name="furniture_material" placeholder="Solid wood, laminate, metal, boucle..." maxlength="120">
+                </label>
+                <label>Moveability / setup
+                  <input type="text" name="furniture_moveability" placeholder="Upstairs, disassembles, truck required, two-person carry..." maxlength="160">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="decor_small_home" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Width
+                  <input type="text" name="decor_width" placeholder="16 in" maxlength="40">
+                </label>
+                <label>Depth
+                  <input type="text" name="decor_depth" placeholder="6 in" maxlength="40">
+                </label>
+                <label>Height
+                  <input type="text" name="decor_height" placeholder="24 in" maxlength="40">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Style keywords
+                  <input type="text" name="decor_style" placeholder="Modern, boho, rustic, farmhouse..." maxlength="160">
+                </label>
+                <label>Material
+                  <input type="text" name="decor_material" placeholder="Ceramic, wood, glass, woven..." maxlength="120">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="clothing_shoes" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="clothing_brand" placeholder="Nike, Free People, Converse..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Size
+                  <input type="text" name="clothing_size" placeholder="Women's M, 8.5, 32x30..." maxlength="60" data-required-visible="true">
+                </label>
+                <label>Type / fit
+                  <input type="text" name="clothing_fit" placeholder="Bike shorts, straight leg, oversized hoodie..." maxlength="120">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Color / pattern
+                  <input type="text" name="clothing_color" placeholder="Black, cream floral, tan suede..." maxlength="120">
+                </label>
+                <label>Tags / measurements / defects
+                  <input type="text" name="clothing_tags" placeholder="New with tags, inseam 5 in, tiny pull on seam..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="electronics" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="electronics_brand" placeholder="Apple, Samsung, Sony..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="electronics_model" placeholder="AirPods Pro 2, WH-1000XM5..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Storage / specs
+                  <input type="text" name="electronics_specs" placeholder="256GB, USB-C, 4K, unlocked..." maxlength="160">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Tested status
+                  <input type="text" name="electronics_tested" placeholder="Fully tested, powers on only, battery holds charge..." maxlength="160" data-required-visible="true">
+                </label>
+                <label>Included accessories
+                  <input type="text" name="electronics_accessories" placeholder="Original box, charger, cable, remote, case..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="bikes_outdoor" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="outdoor_brand" placeholder="Trek, Specialized, Burton..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="outdoor_model" placeholder="Marlin 5, Woom 3, Yeti Hopper..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Size / frame / wheel
+                  <input type="text" name="outdoor_size" placeholder="Large frame, 29 in wheels, 152cm..." maxlength="120" data-required-visible="true">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Included gear / upgrades
+                  <input type="text" name="outdoor_accessories" placeholder="Bottle cage, saddle bag, helmet, rack..." maxlength="180">
+                </label>
+                <label>Use-ready notes
+                  <input type="text" name="outdoor_readiness" placeholder="Fresh tune, ready to ride, edges sharpened..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="tools_equipment" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="tools_brand" placeholder="DeWalt, Milwaukee, Stihl..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="tools_model" placeholder="DCD791, M18 Fuel..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Power source
+                  <input type="text" name="tools_power" placeholder="Cordless 20V, gas, corded 120V..." maxlength="120">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Tested working status
+                  <input type="text" name="tools_tested" placeholder="Runs well, fully tested, charger works..." maxlength="180" data-required-visible="true">
+                </label>
+                <label>Included kit pieces
+                  <input type="text" name="tools_kit" placeholder="Battery, charger, case, blades, bits..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="baby_kids" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="kids_brand" placeholder="Nuna, Uppababy, Little Tikes..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model / product name
+                  <input type="text" name="kids_model" placeholder="PIPA RX, Vista V2..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Age / size range
+                  <input type="text" name="kids_age_range" placeholder="0-6 months, toddler, 5T..." maxlength="120">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Included attachments / parts
+                  <input type="text" name="kids_parts" placeholder="Adapters, cup holder, infant insert, manual..." maxlength="180">
+                </label>
+                <label>Safety / cleanliness notes
+                  <input type="text" name="kids_safety" placeholder="Never crashed, smoke-free home, washed cover..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="appliances" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="appliance_brand" placeholder="GE, Whirlpool, Dyson..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="appliance_model" placeholder="VMAX, KUDS30..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Width / height / depth
+                  <input type="text" name="appliance_dimensions" placeholder="27 x 67 x 29 in" maxlength="120" data-required-visible="true">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Tested status
+                  <input type="text" name="appliance_tested" placeholder="Runs cold, vacuum charges, all burners work..." maxlength="180" data-required-visible="true">
+                </label>
+                <label>Hookups / included parts
+                  <input type="text" name="appliance_parts" placeholder="Water line, trays, shelves, charger dock..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="collectibles_media" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand / franchise
+                  <input type="text" name="collectible_brand" placeholder="Pokemon, Lego, Funko..." maxlength="120">
+                </label>
+                <label>Item type
+                  <input type="text" name="collectible_type" placeholder="Card lot, sealed set, hardcover..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Edition / year / set
+                  <input type="text" name="collectible_edition" placeholder="Base Set, 1st edition, 2022 release..." maxlength="160">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Completeness / condition details
+                  <input type="text" name="collectible_condition" placeholder="Sealed, complete, loose, shelf wear..." maxlength="180" data-required-visible="true">
+                </label>
+                <label>Special notes
+                  <input type="text" name="collectible_notes" placeholder="Signed, includes booklet, rare colorway..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="other" hidden>
+              <label>Tell us the key specs you already know
+                <textarea name="other_category_notes" rows="4" maxlength="1600" placeholder="If this item does not fit a category cleanly, list the brand, size, dimensions, what's included, and anything buyers need to know." data-required-visible="true"></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-fields-conditional" id="fields-rescue" hidden>
+          <div class="form-subsection">
+            <p class="form-subsection-title">Listing rescue basics</p>
+            <label>Live listing URL
+              <input type="url" name="listing_url_v2" maxlength="2000" placeholder="Facebook Marketplace or KSL Classifieds link" data-required-visible="true">
+            </label>
+            <div class="input-grid">
+              <label>Item category
+                <select name="rescue_item_category" id="rescue-item-category" data-category-select data-required-visible="true">
+                  <option value="">Select a category</option>
+                  <option value="furniture_home">Furniture / home goods</option>
+                  <option value="decor_small_home">Home decor / small household item</option>
+                  <option value="clothing_shoes">Clothing / shoes / accessories</option>
+                  <option value="electronics">Electronics / tech</option>
+                  <option value="bikes_outdoor">Bike / outdoor gear / sporting goods</option>
+                  <option value="tools_equipment">Tools / equipment</option>
+                  <option value="baby_kids">Baby / kids gear</option>
+                  <option value="appliances">Appliance / home equipment</option>
+                  <option value="collectibles_media">Collectible / toy / book / hobby item</option>
+                  <option value="other">Other / not sure</option>
+                </select>
+              </label>
+              <label>How long has it been live?
+                <select name="listing_age_v2" data-required-visible="true">
+                  <option value="">Select one</option>
+                  <option value="less_than_week">Less than a week</option>
+                  <option value="1_2_weeks">1 - 2 weeks</option>
+                  <option value="3_4_weeks">3 - 4 weeks</option>
+                  <option value="over_month">Over a month</option>
+                </select>
+              </label>
+            </div>
+            <fieldset class="checkbox-group">
+              <legend>Where is it currently posted?</legend>
+              <div class="checkbox-grid">
+                <label class="checkbox-card"><input type="checkbox" name="current_marketplaces" value="facebook_marketplace"> Facebook Marketplace</label>
+                <label class="checkbox-card"><input type="checkbox" name="current_marketplaces" value="ksl"> KSL</label>
+                <label class="checkbox-card"><input type="checkbox" name="current_marketplaces" value="nextdoor"> Nextdoor</label>
+                <label class="checkbox-card"><input type="checkbox" name="current_marketplaces" value="craigslist"> Craigslist</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-subsection">
+            <p class="form-subsection-title">Location and current condition</p>
+            <div class="input-grid input-grid-three">
+              <label>City / region
+                <input type="text" name="city_region_rescue_v2" placeholder="Lehi, Provo, Draper" maxlength="80" data-required-visible="true">
+              </label>
+              <label>ZIP code
+                <input type="text" name="zip_code_rescue" placeholder="84043" maxlength="10" inputmode="numeric">
+              </label>
+              <label>Public pickup landmark
+                <input type="text" name="pickup_landmark_rescue" placeholder="Holbrook Farms Park, Smith's on Main" maxlength="140" data-required-visible="true">
+              </label>
+            </div>
+            <div class="input-grid">
+              <label>Current condition
+                <select name="condition_rescue_v2" data-required-visible="true">
+                  <option value="">Select one</option>
+                  <option value="new">New / never used</option>
+                  <option value="like_new">Like new</option>
+                  <option value="good">Good / lightly used</option>
+                  <option value="fair">Fair / visible wear</option>
+                  <option value="parts">For parts / not fully working</option>
+                </select>
+              </label>
+              <label>Photo folder or screenshot link
+                <input type="url" name="rescue_photo_folder_link" maxlength="2000" placeholder="Drive folder or screenshot set">
+              </label>
+            </div>
+            <label>Why did you choose that condition?
+              <textarea name="condition_reason_rescue_v2" rows="3" maxlength="1200" placeholder="Mention flaws, missing pieces, tag status, packaging, or anything the current listing may not explain well." data-required-visible="true"></textarea>
+            </label>
+          </div>
+
+          <div class="form-subsection">
+            <p class="form-subsection-title">What feels wrong and what you know</p>
+            <label>What feels wrong about it?
+              <textarea name="rescue_notes_v2" rows="4" maxlength="2000" placeholder="Low clicks, no messages, lowball offers, stale title, weak photos, price mismatch, wrong category..." data-required-visible="true"></textarea>
+            </label>
+            <label>Brain dump everything you know about the item
+              <textarea name="rescue_brain_dump" rows="6" maxlength="4000" placeholder="Paste any specs, local comps, retail references, included parts, measurements, condition facts, and buyer questions you already know." data-required-visible="true"></textarea>
+            </label>
+          </div>
+
+          <div class="form-subsection category-subsection" data-category-root>
+            <p class="form-subsection-title">Category-specific details</p>
+
+            <div class="category-fields" data-category-group="furniture_home" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Width
+                  <input type="text" name="rescue_furniture_width" placeholder="42 in" maxlength="40" data-required-visible="true">
+                </label>
+                <label>Depth
+                  <input type="text" name="rescue_furniture_depth" placeholder="18 in" maxlength="40" data-required-visible="true">
+                </label>
+                <label>Height
+                  <input type="text" name="rescue_furniture_height" placeholder="31 in" maxlength="40" data-required-visible="true">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Material / finish
+                  <input type="text" name="rescue_furniture_material" placeholder="Solid wood, laminate, metal, boucle..." maxlength="120">
+                </label>
+                <label>Moveability / setup
+                  <input type="text" name="rescue_furniture_moveability" placeholder="Upstairs, disassembles, truck required, two-person carry..." maxlength="160">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="decor_small_home" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Width
+                  <input type="text" name="rescue_decor_width" placeholder="16 in" maxlength="40">
+                </label>
+                <label>Depth
+                  <input type="text" name="rescue_decor_depth" placeholder="6 in" maxlength="40">
+                </label>
+                <label>Height
+                  <input type="text" name="rescue_decor_height" placeholder="24 in" maxlength="40">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Style keywords
+                  <input type="text" name="rescue_decor_style" placeholder="Modern, boho, rustic, farmhouse..." maxlength="160">
+                </label>
+                <label>Material
+                  <input type="text" name="rescue_decor_material" placeholder="Ceramic, wood, glass, woven..." maxlength="120">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="clothing_shoes" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="rescue_clothing_brand" placeholder="Nike, Free People, Converse..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Size
+                  <input type="text" name="rescue_clothing_size" placeholder="Women's M, 8.5, 32x30..." maxlength="60" data-required-visible="true">
+                </label>
+                <label>Type / fit
+                  <input type="text" name="rescue_clothing_fit" placeholder="Bike shorts, straight leg, oversized hoodie..." maxlength="120">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Color / pattern
+                  <input type="text" name="rescue_clothing_color" placeholder="Black, cream floral, tan suede..." maxlength="120">
+                </label>
+                <label>Tags / measurements / defects
+                  <input type="text" name="rescue_clothing_tags" placeholder="New with tags, inseam 5 in, tiny pull on seam..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="electronics" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="rescue_electronics_brand" placeholder="Apple, Samsung, Sony..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="rescue_electronics_model" placeholder="AirPods Pro 2, WH-1000XM5..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Storage / specs
+                  <input type="text" name="rescue_electronics_specs" placeholder="256GB, USB-C, 4K, unlocked..." maxlength="160">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Tested status
+                  <input type="text" name="rescue_electronics_tested" placeholder="Fully tested, powers on only, battery holds charge..." maxlength="160" data-required-visible="true">
+                </label>
+                <label>Included accessories
+                  <input type="text" name="rescue_electronics_accessories" placeholder="Original box, charger, cable, remote, case..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="bikes_outdoor" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="rescue_outdoor_brand" placeholder="Trek, Specialized, Burton..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="rescue_outdoor_model" placeholder="Marlin 5, Woom 3, Yeti Hopper..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Size / frame / wheel
+                  <input type="text" name="rescue_outdoor_size" placeholder="Large frame, 29 in wheels, 152cm..." maxlength="120" data-required-visible="true">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Included gear / upgrades
+                  <input type="text" name="rescue_outdoor_accessories" placeholder="Bottle cage, saddle bag, helmet, rack..." maxlength="180">
+                </label>
+                <label>Use-ready notes
+                  <input type="text" name="rescue_outdoor_readiness" placeholder="Fresh tune, ready to ride, edges sharpened..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="tools_equipment" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="rescue_tools_brand" placeholder="DeWalt, Milwaukee, Stihl..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="rescue_tools_model" placeholder="DCD791, M18 Fuel..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Power source
+                  <input type="text" name="rescue_tools_power" placeholder="Cordless 20V, gas, corded 120V..." maxlength="120">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Tested working status
+                  <input type="text" name="rescue_tools_tested" placeholder="Runs well, fully tested, charger works..." maxlength="180" data-required-visible="true">
+                </label>
+                <label>Included kit pieces
+                  <input type="text" name="rescue_tools_kit" placeholder="Battery, charger, case, blades, bits..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="baby_kids" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="rescue_kids_brand" placeholder="Nuna, Uppababy, Little Tikes..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model / product name
+                  <input type="text" name="rescue_kids_model" placeholder="PIPA RX, Vista V2..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Age / size range
+                  <input type="text" name="rescue_kids_age_range" placeholder="0-6 months, toddler, 5T..." maxlength="120">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Included attachments / parts
+                  <input type="text" name="rescue_kids_parts" placeholder="Adapters, cup holder, infant insert, manual..." maxlength="180">
+                </label>
+                <label>Safety / cleanliness notes
+                  <input type="text" name="rescue_kids_safety" placeholder="Never crashed, smoke-free home, washed cover..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="appliances" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand
+                  <input type="text" name="rescue_appliance_brand" placeholder="GE, Whirlpool, Dyson..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Model
+                  <input type="text" name="rescue_appliance_model" placeholder="VMAX, KUDS30..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Width / height / depth
+                  <input type="text" name="rescue_appliance_dimensions" placeholder="27 x 67 x 29 in" maxlength="120" data-required-visible="true">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Tested status
+                  <input type="text" name="rescue_appliance_tested" placeholder="Runs cold, vacuum charges, all burners work..." maxlength="180" data-required-visible="true">
+                </label>
+                <label>Hookups / included parts
+                  <input type="text" name="rescue_appliance_parts" placeholder="Water line, trays, shelves, charger dock..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="collectibles_media" hidden>
+              <div class="input-grid input-grid-three">
+                <label>Brand / franchise
+                  <input type="text" name="rescue_collectible_brand" placeholder="Pokemon, Lego, Funko..." maxlength="120">
+                </label>
+                <label>Item type
+                  <input type="text" name="rescue_collectible_type" placeholder="Card lot, sealed set, hardcover..." maxlength="120" data-required-visible="true">
+                </label>
+                <label>Edition / year / set
+                  <input type="text" name="rescue_collectible_edition" placeholder="Base Set, 1st edition, 2022 release..." maxlength="160">
+                </label>
+              </div>
+              <div class="input-grid">
+                <label>Completeness / condition details
+                  <input type="text" name="rescue_collectible_condition" placeholder="Sealed, complete, loose, shelf wear..." maxlength="180" data-required-visible="true">
+                </label>
+                <label>Special notes
+                  <input type="text" name="rescue_collectible_notes" placeholder="Signed, includes booklet, rare colorway..." maxlength="180">
+                </label>
+              </div>
+            </div>
+
+            <div class="category-fields" data-category-group="other" hidden>
+              <label>Tell us the key specs you already know
+                <textarea name="rescue_other_category_notes" rows="4" maxlength="1600" placeholder="If this item does not fit a category cleanly, list the brand, size, dimensions, what's included, and anything buyers need to know." data-required-visible="true"></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-fields-conditional" id="fields-not-sure" hidden>
+          <div class="form-subsection">
+            <p class="form-subsection-title">Start here</p>
+            <div class="input-grid">
+              <label>Best-fit category
+                <select name="general_category_guess">
+                  <option value="">Select one</option>
+                  <option value="furniture_home">Furniture / home goods</option>
+                  <option value="decor_small_home">Home decor / small household item</option>
+                  <option value="clothing_shoes">Clothing / shoes / accessories</option>
+                  <option value="electronics">Electronics / tech</option>
+                  <option value="bikes_outdoor">Bike / outdoor gear / sporting goods</option>
+                  <option value="tools_equipment">Tools / equipment</option>
+                  <option value="baby_kids">Baby / kids gear</option>
+                  <option value="appliances">Appliance / home equipment</option>
+                  <option value="collectibles_media">Collectible / toy / book / hobby item</option>
+                  <option value="other">Other / not sure</option>
+                </select>
+              </label>
+              <label>Photo folder link
+                <input type="url" name="general_photo_folder_link" maxlength="2000" placeholder="Google Drive, iCloud, Dropbox...">
+              </label>
+            </div>
+            <label>Tell us what you're working with
+              <textarea name="general_notes_v2" rows="6" maxlength="3000" placeholder="Describe the item, what marketplaces you use, what outcome you want, and any important specs or issues. We will figure out the right path."></textarea>
+            </label>
+          </div>
         </div>
 
         <input type="hidden" name="lead_source" value="website">

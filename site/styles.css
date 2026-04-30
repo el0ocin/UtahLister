@@ -2166,6 +2166,85 @@ textarea {
   display: none;
 }
 
+.form-subsection {
+  display: grid;
+  gap: 14px;
+  padding: 18px 18px 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(26, 21, 23, 0.08);
+  background: rgba(255, 252, 247, 0.92);
+}
+
+.form-subsection-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--canyon-deep);
+}
+
+.input-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.checkbox-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.checkbox-group legend {
+  padding: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(26, 21, 23, 0.1);
+  background: #fff;
+  font-size: 0.96rem;
+}
+
+.checkbox-card input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.category-subsection {
+  border-color: rgba(44, 112, 72, 0.16);
+}
+
+.category-fields {
+  display: grid;
+  gap: 14px;
+}
+
+.category-fields[hidden] {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .input-grid-three,
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-actions[hidden] {
   display: none;
 }
